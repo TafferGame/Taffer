@@ -1,12 +1,17 @@
 #pragma once
 
-#define MAX_VISIBLE_NODES 10
-class Map {
+#define MAX_VISIBLE_NODES 2
+#define MAX_NODES 100
+//Map class.
+//Contains all nodes on the map and currently visible nodes.
+class MapClass {
 public:
-	void GetVisibleNodes(char**);
-	void TestNodes();
+	void DrawVisibleNodes(int plX, int plY);
+	//Testing function
+	void InitializeEmptyMap();
+	void Place(char object, int x, int y);
 private:
-	char nodes[100][100];
-	char visibleNodes[MAX_VISIBLE_NODES][MAX_VISIBLE_NODES];
+	char nodes[MAX_NODES][MAX_NODES];
+	//Testing variable
 	char ** testNodes;
 };

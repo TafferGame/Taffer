@@ -85,9 +85,11 @@
     <ClInclude Include="sandbox.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BaseGame.cpp" />
     <ClCompile Include="map.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="Jobs.cpp" />
+    <ClCompile Include="units.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
